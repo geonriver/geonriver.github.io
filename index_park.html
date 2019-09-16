@@ -1,0 +1,477 @@
+<?$dir_h=$_SERVER['DOCUMENT_ROOT'];?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Веревочный парк. Скалодромы. Строительство. Изготовление.</title>
+<link href="/favicon.ico" rel="SHORTCUT ICON" />
+<meta name="description" content="Adventure Travel Company" />
+<meta name="keywords" content="верёвочный курс, верёвочный парк, скалодромы." 
+ />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+
+<link href="/highslide.css" type="text/css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/left_menu.css" rel="stylesheet" type="text/css" />
+<link href="css/tabs.css" rel="stylesheet" type="text/css" />
+<link href="favicon.ico" rel="shortcut icon" />
+
+<meta name="google-site-verification" content="jG26JOgQtSVzukoAeseggEP0eSndJejBSbXg-4eqV9M" />
+
+</head>
+<body>
+
+<?php
+if(isset($include_php)) 
+include ("{$_SERVER['DOCUMENT_ROOT']}/include/$include_php"); ?>
+<?include($dir_h.'/_head.html');
+$db_class=1;
+include($dir_h."/lib/myconfig.php"); ?>
+
+<!-- Основное окно -->
+
+<img height="1" src="/img/s.gif" width="16" alt="" />
+<table width="100%" class="ggl-search" border=0>
+<tbody>
+<tr valign="top" >
+<td width="200" align="center" class="mobile">
+
+<!-- Кнопка 1 -->
+<table width="200" height="300" border=0>
+<tr>
+<td align="center" valign="middle">
+<a href=index_alp.html><img src="img/button-1-op.gif" id="imag" onMouseOver="this.src='img/button-1.gif'"  onmouseout="this.src='img/button-1-op.gif'"  alt="Альпинистские восхождения: Эльбрус, Казбек, Ушба, Монблан, Маттерхорн, Килиманджаро, Тубкаль, Арарат, Демавенд, Пик Ленина, Пик Мера, Ама Даблам, Эверест, Айленд Пик, Аконкагуа, Чимборасо, Вулканы Эквадора, Ключевская сопка, Белуха, Карстенз, Мак-Кинли, Говерла, Петрос."  title="Альпинистские восхождения: Эльбрус, Казбек, Ушба, Монблан, Маттерхорн, Килиманджаро, Тубкаль, Арарат, Демавенд, Пик Ленина, Пик Мера, Ама Даблам, Эверест, Айленд Пик, Аконкагуа, Чимборасо, Вулканы Эквадора, Ключевская сопка, Белуха, Карстенз, Мак-Кинли, Говерла, Петрос."></a>
+</td>
+</tr>
+</table>
+
+<!-- Кнопка 2 -->
+
+<table width="200" height="300" border=0>
+<tr>
+<td align="center" valign="middle">
+<a href=index_trek.html><img src="img/button-5-op.gif" id="imag" onMouseOver="this.src='img/button-5.gif'"  onmouseout="this.src='img/button-5-op.gif'"  alt="Треки и походы: по Крыму и Карпатам, вокруг Аннапурны, Дхаулагири, Монблана, Эльбруса, кора вокруг Кайласа, трек к Эвересту, трек в Пакистане, Тихоокеанское кольцо."  title="Треки и походы: по Крыму и Карпатам, вокруг Аннапурны, Дхаулагири, Монблана, Эльбруса, кора вокруг Кайласа, трек к Эвересту, трек в Пакистане, Тихоокеанское кольцо."></a>
+</td>
+</tr>
+</table>
+
+
+<!-- Кнопка 3 -->
+
+<table width="200" height="300" border=0>
+<tr>
+<td align="center" valign="middle">
+<a href=index_school.html><img src="img/button-6-op.gif" id="imag" onMouseOver="this.src='img/button-6.gif'"  onmouseout="this.src='img/button-6-op.gif'"  alt="Школы: школа скалолазанья, школа альпинизма, школа выживания, зимние альпсборы, зимняя альпподготовка, летняя альпиниада." title="Школы: школа скалолазанья, школа альпинизма, школа выживания, зимние альпсборы, зимняя альпподготовка, летняя альпиниада."></a>
+</td>
+</tr>
+</table>
+
+
+
+
+
+<!-- Кнопка 4 -->
+<table width="200" height="300" border=0>
+<tr>
+<td align="center" valign="middle">
+<a href=index_help.html><img src="img/button-4-op.gif" id="imag" onMouseOver="this.src='img/button-4.gif'"  onmouseout="this.src='img/button-4-op.gif'"  alt="Поддержка клиентов. Прокат снаряжения, заправка газовых баллонов, авиабилеты, визы, страхование, консультации, программа лояльности." title="Поддержка клиентов. Прокат снаряжения, заправка газовых баллонов, авиабилеты, визы, страхование, консультации, программа лояльности."></a>
+</td>
+</tr>
+</table>
+
+<br>
+
+<!-- Семь вершин -->
+<table width="200" border="1" bordercolor="#FFFFFF" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td width="200" height="35" align="center"><span class="red">СЕМЬ ВЕРШИН</span></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF" class="note_small">
+<table>
+<tbody>
+<tr>
+<td>
+
+<a href="http://tropa.dp.ua/extreme/mountain/everest.html" title="Восхождение на Эверест с Тропой">
+<img alt="Восхождение на Эверест с Тропой" src="/foto/worldglobe/everest.jpg" style="width: 70px; height: 70px;" /></a></td>
+<td align="left">
+<div><a href="http://tropa.dp.ua/extreme/mountain/everest.html" title="Восхождение на Эверест с Тропой">&nbsp;&nbsp;&nbsp;<span class="mal">Эверест</span></a></div>
+<div><a href="http://tropa.dp.ua/extreme/mountain/everest.html" title="Восхождение на Эверест с Тропой">&nbsp;&nbsp;&nbsp;<span class="mal">(8848м)</span></a></div>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="http://tropa.dp.ua/elbrus/eraund.html" title="Восхождение на Эльбрус с Тропой">
+<img alt="Восхождение на Эльбрус с Тропой" src="/foto/worldglobe/elbrus.jpg" style="width: 70px; height: 70px;" title="Восхождение на Эльбрус с Тропой" /></a></td>
+<td align="left">
+<div><a href="http://tropa.dp.ua/elbrus/eraund.html" title="Восхождение на Эльбрус с Тропой">&nbsp;&nbsp;&nbsp;<span class="mal">Эльбрус</span></a></div>
+<div><a href="http://tropa.dp.ua/elbrus/eraund.html" title="Восхождение на Эльбрус с Тропой">&nbsp;&nbsp;&nbsp;<span class="mal">(5642м)</span></a></div>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="http://tropa.dp.ua/extreme/mountain/carstensz.html" title="Восхождение на пик Пирамида Карстенз. Индонезия.">
+<img alt="Восхождение на пик Пирамида Карстенз (4884м). Индонезия." src="/foto/worldglobe/karnstez.jpg" style="width: 70px; height: 70px;" title="Восхождение на пик Пирамида Карстенз (4884м). Индонезия." /></a></td>
+<td align="left">
+<div><a href="http://tropa.dp.ua/extreme/mountain/carstensz.html" title="Восхождение на пик Пирамида Карстенз. Индонезия.">&nbsp;&nbsp;<span class="mal">Карстенз</span></a></div>
+<div><a href="http://tropa.dp.ua/extreme/mountain/carstensz.html" title="Восхождение на пик Пирамида Карстенз. Индонезия.">&nbsp;&nbsp;<span class="mal">(4884м)</span></a></div>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="http://tropa.dp.ua/extreme/mountain/aconcagua.html" title="Восхождение на Аконкагуа - 6962 м.">
+<img alt="Восхождение на Аконкагуа - 6962 м." src="/foto/worldglobe/akon.jpg" style="width: 70px; height: 70px;" title="Восхождение на Аконкагуа - 6962 м." /></a></td>
+<td align="left">
+<div><a href="http://tropa.dp.ua/extreme/mountain/aconcagua.html" title="Восхождение на Аконкагуа - 6962 м.">&nbsp;&nbsp;&nbsp;<span class="mal">Аконкагуа</span></a></div>
+<div><a href="http://tropa.dp.ua/extreme/mountain/aconcagua.html" title="Восхождение на Аконкагуа - 6962 м.">&nbsp;&nbsp;&nbsp;<span class="mal">(6962м)</span></a></div>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="http://tropa.dp.ua/extreme/mountain/mckinley.html" title="Восхождение на высшую точку Северной Америки Мак-Кинли (6194м)">
+<img alt="Восхождение на высшую точку Северной Америки Мак-Кинли (6194м)" src="/foto/worldglobe/mckinley.jpg" style="width: 70px; height: 70px;" title="Восхождение на высшую точку Северной Америки Мак-Кинли (6194м)" /></a></td>
+<td align="left">
+<div><a href="http://tropa.dp.ua/extreme/mountain/mckinley.html" title="Восхождение на высшую точку Северной Америки Мак-Кинли (6194м)">&nbsp;&nbsp;&nbsp;<span class="mal">Мак-Кинли</span></a></div>
+<div><a href="http://tropa.dp.ua/extreme/mountain/mckinley.html" title="Восхождение на высшую точку Северной Америки Мак-Кинли (6194м)">&nbsp;&nbsp;&nbsp;<span class="mal">(6194м)</span></a></div>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="http://tropa.dp.ua/extreme/mountain/kilimanjaro.html" title="Восхождение на Килиманджаро с Тропой">
+<img alt="Восхождение на Килиманджаро с Тропой" src="/foto/worldglobe/kiliman.jpg" style="width: 70px; height: 70px;" title="Восхождение на Килиманджаро с Тропой" /></a></td>
+<td align="left">
+<div><a href="http://tropa.dp.ua/extreme/mountain/kilimanjaro.html" title="Восхождение на Килиманджаро с Тропой">&nbsp;<span class="mal">Килиманджаро</span></a></div>
+<div><a href="http://tropa.dp.ua/extreme/mountain/kilimanjaro.html" title="Восхождение на Килиманджаро с Тропой">&nbsp;&nbsp;&nbsp;<span class="mal">(5895м)</span></a></div>
+</td>
+</tr>
+
+<tr>
+<td>
+<img alt="Восхождение на Пик Винсон (4897м)" src="/foto/worldglobe/vins.jpg" style="width: 70px; height: 70px;" title="Восхождение на Пик Винсон (4897м)" /></td>
+<td align="left">
+<div>&nbsp;&nbsp;&nbsp;<span class="mal">Пик Винсон</span></div>
+<div>&nbsp;&nbsp;&nbsp;<span class="mal">(4897м)</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+
+<!-- вертикальна полоса -->
+<td width="1" bgcolor="#999999"></td>
+
+<!-- пустая полоса -->
+<td><table width="10" border=0><tr><td></td></tr></table></td>
+<td width="100%" align="center" valign="top" class="green" >
+<!-- начало основного окна -->
+
+<br><br><h1>&nbsp;&nbsp;&nbsp;Веревочный парк для взрослых и детей. Скалодромы.</h1>
+ <h2> Проектирование, изготовление, монтаж, обслуживание. </h2>
+<br><br>
+  
+<table width="100%" border=0>
+
+<tr>
+<td>
+<!-- Верёвочный парк. -->
+<table width="100%" class="mobile" border=0>
+<tr>
+<td align="center" valign="middle"><a href=/extreme/weekend/park.html><img src="img/button-park-01-op.gif" id="imag" onMouseOver="this.src='img/button-park-01.gif'"  onMouseOut="this.src='img/button-park-01-op.gif'"  alt="Верёвочный парк." title="Верёвочный парк."></a></td>
+<td align="center" valign="middle"><a href=/extreme/weekend/detpark.html><img src="img/button-park-02-op.gif" id="imag" onMouseOver="this.src='img/button-park-02.gif'"  onmouseout="this.src='img/button-park-02-op.gif'"  alt="Детский верёвочный парк." title="Детский верёвочный парк."></a></td>
+<td align="center" valign="middle"><a href=/extreme/weekend/skalodrom.html><img src="img/button-park-03-op.gif" id="imag" onMouseOver="this.src='img/button-park-03.gif'"  onmouseout="this.src='img/button-park-03-op.gif'"  alt="Скалодром." title="Скалодром."></a></td>
+</tr>
+<tr>
+  <td height="57" align="center" valign="top"><a href=/extreme/weekend/park.html><big>Веревочный парк</big></a></td>
+  <td align="center" valign="top"><a href=/extreme/weekend/detpark.html><big>Детский<br> веревочный парк</big></a></td>
+  <td align="center" valign="top"><a href=/extreme/weekend/skalodrom.html><big>Скалодром</big></a></td>
+</tr>
+<tr>
+  <td align="center" valign="middle"><a href=/extreme/weekend/trolley.html><img src="img/button-park-05.gif" id="imag" onMouseOver="this.src='img/button-park-5.gif'"  onmouseout="this.src='img/button-park-05.gif'"  alt="Троллей." title="Троллей."></a></td>
+  <td align="center" valign="middle"><a href=/extreme/weekend/treehouse.html><img src="img/button-park-06.gif" id="imag" onMouseOver="this.src='img/button-park-6.gif'"  onmouseout="this.src='img/button-park-06.gif'"  alt="Домик на дереве" title="Домик на дереве"></a></td>
+  <td align="center" valign="middle"><a href=/extreme/weekend/polosa.html><img src="img/button-park-07.gif" id="imag" onMouseOver="this.src='img/button-park-7.gif'"  onmouseout="this.src='img/button-park-07.gif'"  alt="Полоса препятствий" title="Полоса препятствий"></a></td>
+</tr>
+<tr>
+  <td height="48" align="center" valign="top"><a href=/extreme/weekend/park.html><big>Троллей</big></a></td>
+  <td height="48" align="center" valign="top"><a href=/extreme/weekend/park.html><big>Домик на дереве</big></a></td>
+  <td height="48" align="center" valign="top"><a href=/extreme/weekend/park.html><big>Полоса препятствий</big></a></td>
+</tr>
+<tr>
+  <td height="48" align="center" valign="top">&nbsp;</td>
+  <td align="center" valign="middle"><a href=/extreme/weekend/workout.html><img src="img/button-park-08.gif" id="imag" onMouseOver="this.src='img/button-park-8.gif'"  onmouseout="this.src='img/button-park-08.gif'"  alt="Площадки «Workout»" title="Площадки «Workout»"></a></td>
+  <td height="48" align="center" valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td height="48" align="center" valign="top">&nbsp;</td>
+<td height="48" align="center" valign="top"><a href=/extreme/weekend/park.html><big>Площадки "Workout"</big></a></td>
+<td height="48" align="center" valign="top">&nbsp;</td>
+</tr>
+<tr>
+  <td colspan="3" align="center" valign="top"><p align="center">
+
+   <hr align="center" width="100%" size="3" class="line-color" noshade="noshade" />  
+   <br> 
+   <span class="label">НАШИ РАБОТЫ</span> 
+   <p align="center"><span class="style12">Спроектированные и построенные веревочные парки в 2015 году</span> 
+   <table width="100%"  border="0">
+  <tr>
+    <td width="301" align="center" valign="middle"><a href="/parkfotos/11.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/11m.jpg" alt="Экстрим-Парк" title="Экстрим-Парк" width="233" height="159" border="0" /></td>
+    <td width="301" align="center" valign="middle"><a href="/parkfotos/yagotin.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/yagotim.jpg" alt="Экстрим-Парк" title="Экстрим-Парк" width="233" height="159" border="0" /></td>
+    <td width="248" align="center" valign="middle"><a href="/parkfotos/truhanov.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/truhanom.jpg" alt="Экстрим-Парк" title="Экстрим-Парк" width="233" height="159" border="0" /></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6129397985545446513" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">1. Веревочный Парк "Садыба на джерелах " в Луцке, Волынская обл.</span></a><br>
+          </span><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6129397985545446513" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО</span></div></td>
+    <td valign="top"><div align="center"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6152759808533618769" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">2. Детский веревочный парк в котеджном поселке, г.Яготин, Киевская обл.</span></a><br>
+          </span><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6152759808533618769" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО</span><br><br></div></td>
+    <td valign="top"><div align="center"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6152758383229661265" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">3. Веревочный парк. Труханов остров, Киев</span></a><br>
+          </span><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6152758383229661265" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО</span></div></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center" valign="middle"><hr align="center" width="100%" size="2" class="line-color" noshade="noshade" /></td>
+    </tr>
+  <tr>
+    <td width="301" align="center" valign="middle"><a href="/parkfotos/rodnoe.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/rodnoem.jpg" alt="Веревочный парк Родное" title="Веревочный парк Родное" width="233" height="159" border="0" /></td>
+    <td width="301" align="center" valign="middle"><a href="/parkfotos/panda.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/panda1.jpg" alt="Веревочный парк Панда" title="Веревочный парк Панда" width="233" height="159" border="0" /></td>
+    <td width="301" align="center" valign="middle"><a href="/parkfotos/lubov_i_golob.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/lubov_i_golod.jpg" alt="Веревочный парк Любовь и Голод" title="Веревочный парк Любовь и Голод" width="233" height="159" border="0" /></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="center"><a href="https://goo.gl/photos/QDg5D7qPyEKcfMTZA" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">4. Веревочный парк "Родное". Севастополь.</span></a><br>
+          </span><a href="https://goo.gl/photos/QDg5D7qPyEKcfMTZA" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО</span><br><br></div></td>
+    <td valign="top"><div align="center"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6174237783951731009" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">5. Веревочный парк "Панда", г.Ирпень, Киевская обл.</span></a><br>
+          </span><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6174237783951731009" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО</span><br><br></div></td>
+    <td valign="top"><div align="center"><a style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">6. Веревочный парк "Любовь и Голод". Киевская обл.</span></a>
+	<br>
+<a href="https://goo.gl/photos/25CqAM9XcbWJJMQn6" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">Детский парк. Лазалка.</span>
+<br>
+<a href="https://goo.gl/photos/wS1AYR72XcseDhvy9" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">Высокий парк. Экстрим.</span><br></div></td>
+ 
+  </tr>
+  
+  
+  <tr>
+    <td colspan="3" align="center" valign="middle"><hr align="center" width="100%" size="2" class="line-color" noshade="noshade" /></td>
+    </tr>
+  <tr>
+    <td> </td>
+    <td width="301" align="center" valign="middle"><a href="/parkfotos/skyup.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/skyum.jpg" alt="Веревочный парк Sky UP" title="Веревочный парк Sky UP" width="233" height="159" border="0" /> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td valign="top"><div align="center"><a href="https://goo.gl/photos/VrrB483DRqhw1P9a7" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">7. Детский веревочный парк<br>
+    "Sky UP" в   Ровно</span></a><br>
+          </span><a href="https://goo.gl/photos/VrrB483DRqhw1P9a7" target="_blank" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО</span></div></td>
+    <td></td>
+ 
+  </tr>
+  <tr>
+  
+  
+   
+  
+  <tr>
+    <td  colspan="3" valign="top"><br><hr align="center" width="100%" size="3" class="line-color" noshade="noshade" /></td>
+    </tr>
+</table>
+<br>
+      <p align="center"><span class="style12">Спроектированные и построенные веревочные парки в 2014 году</span>     
+ <table class="class100" width="837" border="0">
+      <tr>
+        <td class="class100" width="274" align="center" valign="middle"><a href="/parkfotos/1.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/1m.jpg" alt="Экстрим-Парк" title="Экстрим-Парк" width="233" height="159" border="0" /></td>
+        <td class="class100" width="275" align="center" valign="middle"><a href="/parkfotos/2.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/2m.jpg" alt="Золотой Колос" title="Золотой Колос" width="233" height="159" border="0" /></td>
+        <td class="class100" width="274" align="center" valign="middle"><a href="/parkfotos/3.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/3m.jpg" alt="Аляска-Центр" title="Аляска-Центр" width="233" height="159" border="0" /></td>
+      </tr>
+      <tr>
+        <td height="102" valign="top"><div align="center"><span class="style6"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6044387308233065153" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">1. Веревочный Парк "Экстрим-Парк" для детского спортивного лагеря "Эдельвейс" в Карпатах - с. Орявчик, Львовская обл.</span></a> <br>
+        </span><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6044387308233065153" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО </span></div></td>
+        <td height="102" valign="top"><div align="center"><span class="style6"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6021730548794653377" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">2. Веревочный Парк для санатория "Золотой Колос" в Крыму, Алушта</span></a><br>
+        </span><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6021730548794653377" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО </span></div></td>
+        <td height="102" valign="top"><div align="center"><span class="style6"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6021743591543547249" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">3. Веревочный Парк "Аляска-Центр" для горнолыжного центра "Аляска", Мариуполь</span></a><br>
+        </span><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6021743591543547249" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО</span>&nbsp;&nbsp; <a href="http://www.youtube.com/watch?v=-ofF7-V52lU" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВИДЕОПРЕЗЕНТАЦИЯ</span></div></td>
+      </tr>
+	  <tr>
+        <td height="20" colspan="3" valign="top"><hr align="center" width="100%" size="2" class="line-color" noshade="noshade" /></td>
+        </tr>
+      <tr>
+        <td align="center" valign="middle"><a href="/parkfotos/4.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/4m.jpg" alt="Маугли" title="Маугли" width="233" height="159" border="0" /></td>
+        <td align="center" valign="middle"><a href="/parkfotos/5.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/5m.jpg" alt="Кидев" title="Кидев" width="233" height="159" border="0" /></td>
+        <td align="center" valign="middle"><a href="/parkfotos/6.jpg"" onClick="return hs.expand(this)"><img src="/parkfotos/6m.jpg" alt="Севериновка" title="Севериновка" width="233" height="159" border="0" /></td>
+      </tr>
+      <tr>
+        <td height="90" valign="top"><div align="center"><span class="style6"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6047033984360505201" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">4. Веревочный Парк "Маугли", ж/м Победа-6, Днепропетровск</span></a><br>
+          <a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6047033984360505201" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО </span><br>
+        </div></td>
+        <td height="90" valign="top"><div align="center"><span class="style6"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6044391757688348689" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">5. Веревочный Парк для загородной резиденции "Кидев", Киев;</span></a>
+		<br><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6044391757688348689" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО </span>
+          <br>
+        </div></td>
+        <td height="90" valign="top"><div align="center"><span class="style6"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6044393832936602353" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">6. Частный веревочный парк в котеджном поселке "Севериновка", Киев;</span></a><br>
+        </span><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/6044393832936602353" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО.</span></div></td>
+      </tr>
+      <tr>
+        <td colspan="3" height="20" align="center" valign="middle">
+          <hr align="center" width="100%" size="2" class="line-color" noshade="noshade" /></td>
+        </tr>
+      <tr>
+        <td align="center" valign="middle"> <a href="/parkfotos/7.jpg"" onClick="return hs.expand(this)"> <img src="/parkfotos/7m.jpg" alt="Малютянка" title="Малютянка" class= width="233" height="159" border="0" /></td>
+        <td align="center" valign="middle"><a href="/parkfotos/8.jpg"" onClick="return hs.expand(this)"> <img src="/parkfotos/8m.jpg" alt="Павлоград" title="Павлоград" width="233" height="159" border="0" /></td>
+        <td align="center" valign="middle"><a href="/parkfotos/9.jpg"" onClick="return hs.expand(this)"> <img src="/parkfotos/9m.jpg" alt="Песщанка" title="Песщанка" width="233" height="159" border="0" /></td>
+      </tr>
+      
+      <tr>
+        <td  valign="top"><div align="center"><span class="style6"><a href="https://plus.google.com/u/0/photos/+%D0%A4%D0%B8%D0%BB%D0%B8%D0%BF%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9/albums/6052972564611105777" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">7. Детский веревочный парк для коттеджного городка Малютянка, Киев</span></a><br>
+        </span><a href="https://plus.google.com/u/0/photos/+%D0%A4%D0%B8%D0%BB%D0%B8%D0%BF%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9/albums/6052972564611105777" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО </span></div></td>
+        <td  valign="top"><div align="center"><span class="style6"><a href="https://plus.google.com/u/0/photos/+%D0%A4%D0%B8%D0%BB%D0%B8%D0%BF%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9/albums/6052975140443233393" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">8. Детский веревочный парк, Павлоград.</span></a><br>
+        </span><a href="https://plus.google.com/u/0/photos/+%D0%A4%D0%B8%D0%BB%D0%B8%D0%BF%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9/albums/6052975140443233393" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО </span></div></td>
+        <td valign="top"><div align="center"><span class="style6"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/5986953710267090289" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="style6">9. Веревочный парк на территории дачного участка, с.Песчанка,  Днепропетровск;<br>
+        </span></a></span><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/5986953710267090289" target="_blank" class="style6" style="color: #0000FF; font-size: 14;" #invalid_attr_id="left"><span class="podrobnee">ВСЕ ФОТО </span></div></td>
+      </tr>
+    </table>
+	<br>    
+    <p align="center"> <hr align="center" width="100%" size="3" class="line-color" noshade="noshade" />
+	<br>  
+    <p align="center" class="style12">Спроектированные и построенные веревочные парки в 2011-2013 гг: 
+    <table width="837" class="class100" border="1">
+      <tr>
+        <td height="50"  class="style6">1. Веревочный Парк для коттеджного поселка «Шишкино» - с.Орловщина, Днепропетровская обл (заказчик ООО «Сити Билдинг»);</td>
+        <td div align="center"><a href="https://plus.google.com/photos/111361888125363384474/albums/5882582298368888417" target="_blank" class="style6" style="color: #000099; font-size: 14; text-decoration: underline; font-weight: bold;" #invalid_attr_id="left">ФОТО</a></div></td>
+        <td div align="center"><a href="http://www.youtube.com/watch?v=aqXw33qc6dQ" target="_blank" class="style6" style="color: #990033; font-size: 14; text-decoration: underline; font-weight: bold;" #invalid_attr_id="left">ВИДЕО</a></div></td>
+      </tr>
+      <tr>
+        <td height="50" class="style6">2. Веревочный Парк для садового центра «Сакура» - пос.Братское, Днепропетровск, (заказчик ООО «Сакура»);</td>
+        <td div align="center"><a href="https://plus.google.com/u/0/photos/117071489783412311233/albums/5942814745379910993" target="_blank" class="style6" style="color: #000099; font-size: 14; text-decoration: underline; font-weight: bold;" #invalid_attr_id="left">ФОТО</a></div></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td height=" 50" class="style6">3. Веревочный Парк и Троллей для центра отдыха в селе Родное в Крыму - Севастополь (заказчик ООО «Добробут – Инвест Плюс»);</td>
+        <td><div align="center"><a href="http://tropa.dp.ua/extreme/weekend/rodnoe.html" target="_blank" class="style6" style="color: #000099; font-size: 14; text-decoration: underline; font-weight: bold;" #invalid_attr_id="left">ФОТО</a></div></td>
+        <td><div align="center"><a href="https://www.youtube.com/watch?v=FszGTYaw_CE" target="_blank" class="style6" style="color: #990033; font-size: 14; text-decoration: underline; font-weight: bold;" #invalid_attr_id="left">ВИДЕО</a></div></td>
+      </tr>
+      <tr>
+        <td height="50" class="style6">4. Веревочный Парк для детского лагеря «Панда» в Крыму - пгт. Береговое, Ялта (заказчик - ЧАО «Панда»);</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="50" class="style6">5. Веревочный Парк для детского лагеря «Какаду» в Крыму - с.Заозерное (заказчик - ООО «Черномор»);</td>
+        <td><div align="center"><a href="https://plus.google.com/photos/111361888125363384474/albums/5882583317782537377" target="_blank" class="style6" style="color: #000099; font-size: 14; text-decoration: underline; font-weight: bold;" #invalid_attr_id="left">ФОТО</a></div></td>
+        <td><div align="center"><a href="http://www.youtube.com/watch?v=rTFaEAhDhk0" target="_blank" class="style6" style="color: #990033; font-size: 14; text-decoration: underline; font-weight: bold;" #invalid_attr_id="left">ВИДЕО</a></div></td>
+      </tr>
+      <tr>
+        <td height="50" class="style6">6. Веревочный Парк для санатория "Россия" в Крыму- пос.Гаспра ( заказчик РП «КОК «Россия»);</td>
+        <td><div align="center"><a href="https://plus.google.com/photos/111361888125363384474/albums/5882582978167169153" target="_blank" class="style6" style="color: #000099; font-size: 14; text-decoration: underline; font-weight: bold;" #invalid_attr_id="left">ФОТО</a></div></td>
+        <td><div align="center"><a href="http://www.youtube.com/watch?v=beCdWpK1B3c" target="_blank" class="style6" style="color: #990033; font-size: 14; text-decoration: underline; font-weight: bold;" #invalid_attr_id="left">ВИДЕО</a></div></td>
+      </tr>
+      <tr>
+        <td height="50" class="style6">7. Скалодром «Тропа» для Приднепровской государственной академии строительства и архитектуры, Днепропетровск;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="50" class="style6">8. Скалодром «Тропа» для детского лагеря «Ай-Кемп» в Крыму - с.Заозерное (заказчик ООО «Черномор»)</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>    
+	<p align="center" class="vector">О НАС </p>
+	<div align="justify">
+&nbsp;&nbsp;&nbsp;ЧП «Клуб ТРОПА» является членом Днепропетровской областной Федерации Альпинизма и Скалолазания. Ежегодно с ЧП «Клуб ТРОПА» на высочайшие точки нашей планеты поднимается около 200 человек из Украины, России, стран СНГ, ближнего и дальнего зарубежья. Тренд продаж экстрим-туров ЧП «Клуб ТРОПА», начиная с 2007 года, находится в устойчивом росте.
+
+<br><br>
+&nbsp;&nbsp;&nbsp;С 2010 года ЧП «Клуб Тропа» разрабатывает новое направление – проектирование, монтаж и обслуживание Парков Приключений. За период 2011 – 2015 годы компания построила и обслуживает 20 веревочных парков и два стационарных скалодрома . 
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;В феврале 2014 руководством компании принято решение о выделении строительства веревочных парков и скалодромов в отдельное бизнес-направление, для чего в этот же период регистрируется ООО «ТРОПА».
+</div>    
+  </tr>
+<tr>
+  <td colspan="3" align="center" valign="top">&nbsp;</td>
+  </tr>
+<tr>
+<tr>
+  <td colspan="3" align="center" valign="top"><p>
+<iframe class="class100" src="http://www.slideshare.net/slideshow/embed_code/35959531" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p></td>
+  </tr>
+<tr>
+  <td colspan="3" align="center" valign="top" class="opisania">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#top"><b>&#9650;&#9650;&#9650; Наверх &#9650;&#9650;&#9650;</b></a></td>
+  </tr>
+
+
+</table>
+</td>
+</tr>
+</table>
+
+
+<br>
+<td><table width="10" border=0><tr><td></td></tr></table></td>
+
+
+<td width="1" bgcolor="#999999"></td>
+<td width="200" align="center" class="mobile">
+<!--начало правого меню-->
+
+<!-- Кнопка 5 -->
+<table width="200" height="300" border=0>
+<tr>
+<td align="center" valign="middle">
+<a href=index_corp.html><img src="img/button-2-op.gif" id="imag" onMouseOver="this.src='img/button-2.gif'"  onmouseout="this.src='img/button-2-op.gif'"  alt="Корпоративы и детсвие праздники. Верёвочный курс, квест, корпоративный поход, детский праздник, детский поход, оригинальные поздравления, экскурсионный тур." title="Корпоративы и детсвие праздники. Верёвочный курс, квест, корпоративный поход, детский праздник, детский поход, оригинальные поздравления, экскурсионный тур."></a>
+</td>
+</tr>
+</table>
+
+<!-- Кнопка 6 -->
+<table width="200" height="300" border=0>
+<tr>
+<td align="center" valign="middle">
+<a href=http://www.tropa.dp.ua/index_park.html><img src="img/button-3-op.gif" id="imag" onMouseOver="this.src='img/button-3.gif'"  onmouseout="this.src='img/button-3-op.gif'"  alt="Верёвочные парки. Скалодромы. Проектирование, изготовление, монтаж, обслуживание." title="Верёвочные парки. Скалодромы. Проектирование, изготовление, монтаж, обслуживание."> </a>
+
+</td>
+</tr>
+</table>
+
+<!-- Кнопка 7 -->
+<table width="200" height="300" border=0>
+<tr>
+<td align="center" valign="middle"><a href=index_dnepr.html><img src="img/button-7-op.gif" id="imag" onMouseOver="this.src='img/button-7.gif'"  onMouseOut="this.src='img/button-7-op.gif'"  alt="Активный отдых в Днепропетровске. Скалолазанье в Днепропетровске, подземный Днепропетровск, велотур в Днепропетровске, прыжки с верёвкой, поход в Белую Балку." title="Активный отдых в Днепропетровске. Скалолазанье в Днепропетровске, подземный Днепропетровск, велотур в Днепропетровске, прыжки с верёвкой, поход в Белую Балку."></a></td>
+</tr>
+</table>
+
+<div align="center">
+<hr align="center" width="80%"  size="2" class="line-color" noshade="noshade" />
+<br />
+    <span class="year">GREEN REST</span><br />
+    <a href="http://greenrest.dp.ua" target="_blank" title="Отдых на природе, за городом">
+  Отдых на природе,<br />
+  за городом<br />
+  в Днепропетровске</a>
+<br /><br />
+<hr align="center" width="80%" size="2" class="line-color" noshade="noshade" />
+<br /><br />
+</div>
+
+<br />
+<?include($dir_h."/lib/w_subform.php");?>
+<br /><br /><br />
+<center>
+<span class="malay">
+Copyright &copy;2001-2013<br />
+ArtTropa Web-Design
+</span>
+</center>
+
+
+</td></tr></tbody></table>
+
+<?include($dir_h.'/_foot.html');?>
+</body>
+</html>
