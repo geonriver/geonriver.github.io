@@ -13,7 +13,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # Проверяем локальные связи во всех HTML-файлах
-          args: --verbose --offline './**/*.html'
+          args: --verbose --offline --root . './**/*.html'
 
   check-unused-assets:
     runs-on: ubuntu-latest
