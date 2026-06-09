@@ -1,5 +1,0 @@
-{
-  "imageDirs": ["img"],
-  "imageExtensions": ["jpg", "jpeg", "png", "gif", "svg", "webp", "ico", "avif"],
-  "exclude": ["node_modules", ".git"]
-}
