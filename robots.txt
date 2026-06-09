@@ -1,0 +1,27 @@
+User-agent: *
+
+User-Agent: Googlebot
+Allow: */img
+Allow: *.css
+Allow: *.js
+Allow: *.ttf
+Allow: *.woff
+Allow: *.gif
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+
+User-agent: Yandex
+Allow: */img
+Allow: *.css
+Allow: *.js
+Allow: *.ttf
+Allow: *.woff
+Allow: *.gif
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Host: https://geonriver.com
+
+Sitemap: https://geonriver.com/sitemap.xml
+Sitemap: https://geonriver.com/images-sitemap.xml
