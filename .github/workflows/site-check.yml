@@ -27,4 +27,4 @@ jobs:
           node-version: 20
 
       - name: Ищем неиспользуемые изображения
-        run: npx find-unused-images
+        run: npx find-unused-images --images "img/**/*"
