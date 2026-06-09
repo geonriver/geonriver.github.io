@@ -1,0 +1,30 @@
+name: Проверка статического сайта
+
+on: [push, pull_request]
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Скачиваем репозиторий
+        uses: actions/checkout@v4
+
+      - name: Ищем битые ссылки и недостающие файлы
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Проверяем локальные связи во всех HTML-файлах
+          args: --verbose --offline './**/*.html'
+
+  check-unused-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Скачиваем репозиторий
+        uses: actions/checkout@v4
+
+      - name: Устанавливаем Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Ищем неиспользуемые изображения
+        run: npx find-unused-images
