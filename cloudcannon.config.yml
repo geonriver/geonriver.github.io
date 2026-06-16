@@ -1,11 +1,5 @@
-paths:
-  static: ''
-  uploads: uploads
-timezone: Europe/Kiev
-markdown:
-  engine: commonmark
-  options: {}
 collections_config:
   pages:
-    path: ''
-    icon: wysiwyg
+    path: ""
+    output: true
+    url: "/[path]"
