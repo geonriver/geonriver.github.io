@@ -1,5 +1,0 @@
-collections_config:
-  pages:
-    path: ""
-    output: true
-    url: "/[path]"
