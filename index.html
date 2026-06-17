@@ -553,136 +553,121 @@
 						<div class="findUs__contactAndMap">
 							<div class="findUs__contact-form form">
 
-								<form action="https://api.web3forms.com/submit" method="post" class="form__body"
-									id="form">
+	<form class="form__body" id="form">
 
-									<input type="hidden" name="access_key" value="7130e61c-f370-4081-95aa-d323fb34d9dc">
+		<h3 class="form__title">Send us a message</h3>
+		
+		<div class="form__item">
+			<label for="formName" class="form__label">Name*:</label>
+			<input id="formName" type="text" name="name" class="form__input _req" placeholder="Your name" required>
+		</div>
+		
+		<div class="form__item">
+			<label for="formEmail" class="form__label">Email*:</label>
+			<input id="formEmail" type="email" name="email" class="form__input _req _email" placeholder="Your email" required>
+		</div>
+		
+		<div class="form__item">
+			<div class="form__label">What are you interested in?</div>
+			<div class="options">
+				<div class="options__item">
+					<input id="timber" type="radio" value="timber" name="proposal" class="options__input">
+					<label for="timber" class="options__label"><span>Sawn Timber</span></label>
+				</div>
+				<div class="options__item">
+					<input id="pallets" type="radio" value="pallets" name="proposal" class="options__input">
+					<label for="pallets" class="options__label"><span>Pallets</span></label>
+				</div>
+				<div class="options__item">
+					<input id="pellets" type="radio" value="pellets" name="proposal" class="options__input">
+					<label for="pellets" class="options__label"><span>Wood Pellets</span></label>
+				</div>
+				<div class="options__item">
+					<input id="ruf" type="radio" value="ruf" name="proposal" class="options__input">
+					<label for="ruf" class="options__label"><span>RUF-briquetes</span></label>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form__item">
+			<label for="formMessage" class="form__label">Message:</label>
+			<textarea name="message" id="formMessage" class="form__input"></textarea>
+		</div>
+		
+		<div class="form__item">
+			<div class="form__label">What country?</div>
+			<select name="country" data-class-modif="form" data-scroll data-search class="select">
+				<option selected value="Austria">Austria</option>
+				<option value="Albania">Albania</option>
+				<option value="Andorra">Andorra</option>
+				<option value="Belarus">Belarus</option>
+				<option value="Belgium">Belgium</option>
+				<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+				<option value="Bulgaria">Bulgaria</option>
+				<option value="Croatia">Croatia</option>
+				<option value="Cyprus">Cyprus</option>
+				<option value="Czech Republic">Czech Republic</option>
+				<option value="Denmark">Denmark</option>
+				<option value="Estonia">Estonia</option>
+				<option value="Finland">Finland</option>
+				<option value="France">France</option>
+				<option value="Germany">Germany</option>
+				<option value="Greece">Greece</option>
+				<option value="Hungary">Hungary</option>
+				<option value="Iceland">Iceland</option>
+				<option value="Ireland">Ireland</option>
+				<option value="Italy">Italy</option>
+				<option value="Kosovo">Kosovo</option>
+				<option value="Latvia">Latvia</option>
+				<option value="Liechtenstein">Liechtenstein</option>
+				<option value="Lithuania">Lithuania</option>
+				<option value="Luxembourg">Luxembourg</option>
+				<option value="Malta">Malta</option>
+				<option value="Moldova">Moldova</option>
+				<option value="Monaco">Monaco</option>
+				<option value="Montenegro">Montenegro</option>
+				<option value="Netherlands">Netherlands</option>
+				<option value="North Macedonia">North Macedonia</option>
+				<option value="Norway">Norway</option>
+				<option value="Poland">Poland</option>
+				<option value="Portugal">Portugal</option>
+				<option value="Romania">Romania</option>
+				<option value="San Marino">San Marino</option>
+				<option value="Serbia">Serbia</option>
+				<option value="Slovakia">Slovakia</option>
+				<option value="Slovenia">Slovenia</option>
+				<option value="Spain">Spain</option>
+				<option value="Sweden">Sweden</option>
+				<option value="Switzerland">Switzerland</option>
+				<option value="Turkey">Turkey</option>
+				<option value="Ukraine">Ukraine</option>
+				<option value="United Kingdom">United Kingdom</option>
+				<option value="Other">Other</option>
+			</select>
+		</div>
+		
+		<div class="form__item">
+			<div class="form__label">Attachment:</div>
+			<div class="file">
+				<div class="file__item">
+					<input id="formImage" accept=".jpeg, .png, .gif, .pdf" type="file" name="image" class="file__input">
+					<div class="file__button">Choose</div>
+				</div>
+				<div id="formPreview" class="file__preview"></div>
+			</div>
+		</div>
+		
+		<div class="form__item">
+			<div class="checkbox">
+				<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req" required>
+				<label for="formAgreement" class="checkbox__label">I give my consent to the processing of personal data in accordance with the Agreement.</label>
+			</div>
+		</div>
+		
+		<button type="submit" class="form__button">SEND</button>
+	</form>
 
-									<input type="hidden" name="subject" value="New Submission from Geon River Website">
-
-									<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-									<h3 class="form__title">Send us a message</h3>
-									<div class="form__item">
-										<label for="formName" class="form__label">Name*:</label>
-										<input id="forName" type="text" name="name" class="form__input _req"
-											placeholder="Your name" required>
-									</div>
-									<div class="form__item">
-										<label for="formEmail" class="form__label">Email*:</label>
-										<input id="formEmail" type="text" name="email" class="form__input _req _email"
-											placeholder="Your email" required>
-									</div>
-									<div class="form__item">
-										<div class="form__label">What are you interested in?</div>
-										<div class="options">
-											<div class="options__item">
-												<input id="timber" type="radio" value="timber" name="proposal"
-													class="options__input">
-												<label for="timber" class="options__label"><span>Sawn
-														Timber</span></label>
-											</div>
-											<div class="options__item">
-												<input id="pallets" type="radio" value="pallets" name="proposal"
-													class="options__input">
-												<label for="pallets" class="options__label"><span>Pallets</span></label>
-											</div>
-											<div class="options__item">
-												<input id="pellets" type="radio" value="pellets" name="proposal"
-													class="options__input">
-												<label for="pellets" class="options__label"><span>Wood
-														Pellets</span></label>
-											</div>
-											<div class="options__item">
-												<input id="ruf" type="radio" value="ruf" name="proposal"
-													class="options__input">
-												<label for="ruf"
-													class="options__label"><span>RUF-briquetes</span></label>
-											</div>
-										</div>
-									</div>
-									<div class="form__item">
-										<label for="formMessage" class="form__label">Message:</label>
-										<textarea name="message" id="formMessage" class="form__input"></textarea>
-									</div>
-									<div class="form__item">
-										<div class="form__label">What country?</div>
-										<select name="country" data-class-modif="form" data-scroll data-search
-											class="select">
-											<option selected value="Austria">Austria</option>
-											<option value="Albania">Albania</option>
-											<option value="Andorra">Andorra</option>
-											<option value="Belarus">Belarus</option>
-											<option value="Belgium">Belgium</option>
-											<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-											<option value="Bulgaria">Bulgaria</option>
-											<option value="Croatia">Croatia</option>
-											<option value="Cyprus">Cyprus</option>
-											<option value="Czech Republic">Czech Republic</option>
-											<option value="Denmark">Denmark</option>
-											<option value="Estonia">Estonia</option>
-											<option value="Finland">Finland</option>
-											<option value="France">France</option>
-											<option value="Germany">Germany</option>
-											<option value="Greece">Greece</option>
-											<option value="Hungary">Hungary</option>
-											<option value="Iceland">Iceland</option>
-											<option value="Ireland">Ireland</option>
-											<option value="Italy">Italy</option>
-											<option value="Kosovo">Kosovo</option>
-											<option value="Latvia">Latvia</option>
-											<option value="Liechtenstein">Liechtenstein</option>
-											<option value="Lithuania">Lithuania</option>
-											<option value="Luxembourg">Luxembourg</option>
-											<option value="Malta">Malta</option>
-											<option value="Moldova">Moldova</option>
-											<option value="Monaco">Monaco</option>
-											<option value="Montenegro">Montenegro</option>
-											<option value="Netherlands">Netherlands</option>
-											<option value="North Macedonia">North Macedonia</option>
-											<option value="Norway">Norway</option>
-											<option value="Poland">Poland</option>
-											<option value="Portugal">Portugal</option>
-											<option value="Romania">Romania</option>
-											<option value="San Marino">San Marino</option>
-											<option value="Serbia">Serbia</option>
-											<option value="Slovakia">Slovakia</option>
-											<option value="Slovenia">Slovenia</option>
-											<option value="Spain">Spain</option>
-											<option value="Sweden">Sweden</option>
-											<option value="Switzerland">Switzerland</option>
-											<option value="Turkey">Turkey</option>
-											<option value="Ukraine">Ukraine</option>
-											<option value="United Kingdom">United Kingdom</option>
-											<option value="Other">Other</option>
-										</select>
-									</div>
-									<div class="form__item">
-										<div class="form__label">Attachment:</div>
-										<div class="file">
-											<div class="file__item">
-												<input id="formImage" accept=".jpeg, .png, .gif, .pdf" type="file"
-													name="attachment" class="file__input">
-												<div class="file__button">Choose</div>
-											</div>
-											<div id="formPreview" class="file__preview"></div>
-										</div>
-									</div>
-									<div class="form__item">
-										<div class="checkbox">
-											<input id="formAgreement" checked type="checkbox" name="agreement"
-												class="checkbox__input _req">
-											<label for="formAgreement" class="checkbox__label">I give my consent
-												to
-												the processing of personal data in accordance with the
-												Agreement.</label>
-										</div>
-									</div>
-									<button type="submit" class="form__button">SEND</button>
-								</form>
-
-							</div>
-							<div class="findUs__map">
+</div>							<div class="findUs__map">
 								<iframe
 									data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.2991882601955!2d31.244573715927473!3d51.489376919841426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d548a77c35aa25%3A0x71520dc876d1790a!2z0YPQuy4g0J_QvtC_0L7QstCwLCAyLCDQp9C10YDQvdC40LPQvtCyLCDQp9C10YDQvdC40LPQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDE0MDAw!5e0!3m2!1sru!2sua!4v1673258214194!5m2!1sru!2sua"
 									style="border:0;" allowfullscreen="" loading="lazy"
