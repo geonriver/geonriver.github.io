@@ -826,96 +826,96 @@
 	</div>
 	<script defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20231015152149'></script>
 	<script defer src="js/app.min.js?_v=20231015152149"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-	const contactForm = document.getElementById('form');
-	
-	if (contactForm) {
-		contactForm.addEventListener('submit', async function (e) {
-			e.preventDefault(); // Блокируем стандартную перезагрузку страницы
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const contactForm = document.getElementById('form');
 
-			// Простая валидация: проверяем, активен ли класс ошибок, если у вас используется сторонний валидатор
-			// Если кастомного валидатора нет, браузер сам проверит поля с атрибутом required
-			
-			const submitBtn = contactForm.querySelector('.form__button');
-			const originalBtnText = submitBtn.innerText;
-			
-			// Меняем состояние кнопки во время отправки
-			submitBtn.disabled = true;
-			submitBtn.innerText = 'SENDING...';
+			if (contactForm) {
+				contactForm.addEventListener('submit', async function (e) {
+					e.preventDefault(); // Блокируем стандартную перезагрузку страницы
 
-			// Собираем базовые текстовые поля формы
-			const formData = new FormData(contactForm);
-			const payload = {
-				name: formData.get('name'),
-				email: formData.get('email'),
-				proposal: formData.get('proposal'), // Значение выбранного Radio-button
-				message: formData.get('message'),
-				country: formData.get('country')    // Значение выбранного Country Select
-			};
+					// Простая валидация: проверяем, активен ли класс ошибок, если у вас используется сторонний валидатор
+					// Если кастомного валидатора нет, браузер сам проверит поля с атрибутом required
 
-			// Обработка файла (вложение)
-			const fileInput = document.getElementById('formImage');
-			if (fileInput && fileInput.files.length > 0) {
-				const file = fileInput.files[0];
-				const reader = new FileReader();
-				
-				// Читаем файл как DataURL (Base64) и отправляем после прочтения
-				reader.onload = async function () {
-					payload.fileData = reader.result;
-					payload.fileName = file.name;
-					payload.fileMimeType = file.type;
-					
-					await sendToGoogleSheets(payload, contactForm, submitBtn, originalBtnText);
-				};
-				reader.readAsDataURL(file);
-			} else {
-				// Если файла нет, отправляем данные сразу
-				await sendToGoogleSheets(payload, contactForm, submitBtn, originalBtnText);
+					const submitBtn = contactForm.querySelector('.form__button');
+					const originalBtnText = submitBtn.innerText;
+
+					// Меняем состояние кнопки во время отправки
+					submitBtn.disabled = true;
+					submitBtn.innerText = 'SENDING...';
+
+					// Собираем базовые текстовые поля формы
+					const formData = new FormData(contactForm);
+					const payload = {
+						name: formData.get('name'),
+						email: formData.get('email'),
+						proposal: formData.get('proposal'), // Значение выбранного Radio-button
+						message: formData.get('message'),
+						country: formData.get('country')    // Значение выбранного Country Select
+					};
+
+					// Обработка файла (вложение)
+					const fileInput = document.getElementById('formImage');
+					if (fileInput && fileInput.files.length > 0) {
+						const file = fileInput.files[0];
+						const reader = new FileReader();
+
+						// Читаем файл как DataURL (Base64) и отправляем после прочтения
+						reader.onload = async function () {
+							payload.fileData = reader.result;
+							payload.fileName = file.name;
+							payload.fileMimeType = file.type;
+
+							await sendToGoogleSheets(payload, contactForm, submitBtn, originalBtnText);
+						};
+						reader.readAsDataURL(file);
+					} else {
+						// Если файла нет, отправляем данные сразу
+						await sendToGoogleSheets(payload, contactForm, submitBtn, originalBtnText);
+					}
+				});
 			}
 		});
-	}
-});
 
-async function sendToGoogleSheets(payload, form, submitBtn, originalBtnText) {
-	// ⚠️ ВСТАВЬТЕ СЮДА ВАШ URL, КОТОРЫЙ СКОПИРОВАЛИ ИЗ GOOGLE APPS SCRIPT
-	const webAppUrl = 'https://script.google.com/macros/s/XXXXX/exec'; 
+		async function sendToGoogleSheets(payload, form, submitBtn, originalBtnText) {
+			// ⚠️ ВСТАВЬТЕ СЮДА ВАШ URL, КОТОРЫЙ СКОПИРОВАЛИ ИЗ GOOGLE APPS SCRIPT
+			const webAppUrl = 'https://script.google.com/macros/s/XXXXX/exec';
 
-	try {
-		const response = await fetch(webAppUrl, {
-			method: 'POST',
-			mode: 'cors',
-			headers: {
-				// Важно: отправляем как text/plain, чтобы избежать префлайт-запросов (OPTIONS) со стороны браузера, 
-				// которые Google Apps Script не всегда гладко обрабатывает. JSON.parse внутри скрипта все равно сработает.
-				'Content-Type': 'text/plain' 
-			},
-			body: JSON.stringify(payload)
-		});
+			try {
+				const response = await fetch(webAppUrl, {
+					method: 'POST',
+					mode: 'cors',
+					headers: {
+						// Важно: отправляем как text/plain, чтобы избежать префлайт-запросов (OPTIONS) со стороны браузера, 
+						// которые Google Apps Script не всегда гладко обрабатывает. JSON.parse внутри скрипта все равно сработает.
+						'Content-Type': 'text/plain'
+					},
+					body: JSON.stringify(payload)
+				});
 
-		const result = await response.json();
+				const result = await response.json();
 
-		if (result.status === 'success') {
-			alert('Thank you! Your message has been sent successfully.');
-			form.reset(); // Очищаем форму
-			
-			// Если у вас на сайте есть блок превью файла, очищаем его
-			const filePreview = document.getElementById('formPreview');
-			if (filePreview) filePreview.innerHTML = '';
-		} else {
-			throw new Error(result.message);
+				if (result.status === 'success') {
+					alert('Thank you! Your message has been sent successfully.');
+					form.reset(); // Очищаем форму
+
+					// Если у вас на сайте есть блок превью файла, очищаем его
+					const filePreview = document.getElementById('formPreview');
+					if (filePreview) filePreview.innerHTML = '';
+				} else {
+					throw new Error(result.message);
+				}
+
+			} catch (error) {
+				console.error('Submission error:', error);
+				alert('Oops! Something went wrong. Please try sending your message again later.');
+			} finally {
+				// Возвращаем кнопку в исходное состояние
+				submitBtn.disabled = false;
+				submitBtn.innerText = originalBtnText;
+			}
 		}
-
-	} catch (error) {
-		console.error('Submission error:', error);
-		alert('Oops! Something went wrong. Please try sending your message again later.');
-	} finally {
-		// Возвращаем кнопку в исходное состояние
-		submitBtn.disabled = false;
-		submitBtn.innerText = originalBtnText;
-	}
-}
-</script>
+	</script>
 
 </body>
 
